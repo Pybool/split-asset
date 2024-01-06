@@ -1,0 +1,26 @@
+error: Cannot read properties of undefined (reading 'text') {"timestamp":"2023-11-15T16:38:34.476+01:00"}
+error: newUploadRequest: TypeError: Cannot read properties of undefined (reading 'text') {"timestamp":"2023-11-15T16:40:31.728+01:00"}
+error: newUploadRequest: ValidationError: client: Path `client` is required. {"timestamp":"2023-11-15T17:24:40.811+01:00"}
+error: newUploadRequest: ValidationError: client: Path `client` is required. {"timestamp":"2023-11-15T17:29:13.557+01:00"}
+error: newUploadRequest: ValidationError: client: Path `client` is required. {"timestamp":"2023-11-15T17:29:34.639+01:00"}
+error: newUploadRequest: ValidationError: client: Path `client` is required. {"timestamp":"2023-11-15T17:29:37.106+01:00"}
+error: newUploadRequest: ValidationError: phone: Cast to string failed for value "[ '08156223016', 'Some random comment' ]" (type Array) at path "phone" {"timestamp":"2023-11-15T17:41:50.158+01:00"}
+error: newUploadRequest: TypeError: base64ImagesArray.map is not a function {"timestamp":"2023-11-17T23:33:01.505+01:00"}
+error: newUploadRequest: TypeError: base64ImagesArray.map is not a function {"timestamp":"2023-11-17T23:36:36.118+01:00"}
+error: newUploadRequest: TypeError: base64ImagesArray.map is not a function {"timestamp":"2023-11-22T09:21:08.736+01:00"}
+error: newUploadRequest: TypeError: base64ImagesArray.map is not a function {"timestamp":"2023-11-22T09:21:58.433+01:00"}
+error: newUploadRequest: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined {"timestamp":"2023-11-22T09:23:11.217+01:00"}
+error: newUploadRequest: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined {"timestamp":"2023-11-22T09:23:56.387+01:00"}
+error: newUploadRequest: Error: ENOENT: no such file or directory, open 'C:\Users\emmanuel\Documents\Workspace\something_naija\backend\src\services\uploads\image_1700641538848.jpeg' {"timestamp":"2023-11-22T09:25:38.850+01:00"}
+error: newUploadRequest: Error: ENOENT: no such file or directory, open 'C:\Users\emmanuel\Documents\Workspace\something_naija\backend\src\services\uploads\image_1700641675488.jpeg' {"timestamp":"2023-11-22T09:27:55.490+01:00"}
+error: newUploadRequest: Error: ENOENT: no such file or directory, open 'C:\Users\emmanuel\Documents\Workspace\something_naija\backend\src\uploads\image_1700641720997.jpeg' {"timestamp":"2023-11-22T09:28:40.998+01:00"}
+error: newUploadRequest: Error: ENOENT: no such file or directory, mkdir 'C:\Users\emmanuel\Documents\Workspace\something_naija\backendpublic\uploads' {"timestamp":"2023-11-22T09:47:44.300+01:00"}
+error: newUploadRequest: Error: ENOENT: no such file or directory, mkdir 'C:\Users\emmanuel\Documents\Workspace\something_naija\backend\public\uploads' {"timestamp":"2023-11-22T09:48:03.067+01:00"}
+error: newUploadRequest: TypeError: Cannot read properties of undefined (reading 'split') {"timestamp":"2023-11-26T21:33:43.156+01:00"}
+error: newUploadRequest: TypeError: Cannot read properties of undefined (reading 'split') {"timestamp":"2023-11-26T21:33:55.313+01:00"}
+error: newUploadRequest: TypeError: Cannot read properties of undefined (reading 'split') {"timestamp":"2023-11-26T21:34:01.263+01:00"}
+error: newUploadRequest: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined {"timestamp":"2023-11-26T21:37:39.113+01:00"}
+error: newUploadRequest: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined {"timestamp":"2023-11-26T21:39:24.749+01:00"}
+error: newUploadRequest: TypeError: Cannot read properties of undefined (reading 'split') {"timestamp":"2023-11-26T22:08:45.470+01:00"}
+error: newUploadRequest: MongooseError: Operation `requests.insertOne()` buffering timed out after 10000ms {"timestamp":"2023-12-18T05:13:06.292+01:00"}
+error: newUploadRequest: MongooseError: Operation `requests.insertOne()` buffering timed out after 10000ms {"timestamp":"2023-12-18T05:13:20.170+01:00"}

@@ -1,0 +1,20 @@
+error: createListing: TypeError: Cannot read properties of undefined (reading 'trim') {"timestamp":"2024-01-02T08:13:51.871+01:00"}
+error: createListing: TypeError: Cannot read properties of undefined (reading 'trim') {"timestamp":"2024-01-02T08:14:06.852+01:00"}
+error: createListing: ValidationError: descriptiontag: Path `descriptiontag` is required. {"timestamp":"2024-01-02T08:31:33.144+01:00"}
+error: createListing: ValidationError: locationTag: Path `locationTag` is required. {"timestamp":"2024-01-02T08:37:39.385+01:00"}
+error: createListing: ValidationError: bedType: `4+ Bedroom` is not a valid enum value for path `bedType`. {"timestamp":"2024-01-03T11:11:01.688+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-03T15:11:02.369+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-03T15:13:12.562+01:00"}
+error: createListing: ValidationError: property: Path `property` is required., bedType: Path `bedType` is required., location: Path `location` is required. {"timestamp":"2024-01-05T21:36:11.530+01:00"}
+error: createListing: ValidationError: location: Path `location` is required., bedType: `4 Bed` is not a valid enum value for path `bedType`. {"timestamp":"2024-01-05T21:37:58.284+01:00"}
+error: createListing: ValidationError: location: Path `location` is required. {"timestamp":"2024-01-05T21:38:15.080+01:00"}
+error: createListing: TypeError: Cannot read properties of undefined (reading 'trim') {"timestamp":"2024-01-06T05:26:48.406+01:00"}
+error: createListing: ValidationError: property: Path `property` is required., bedType: Path `bedType` is required. {"timestamp":"2024-01-06T05:37:40.681+01:00"}
+error: createListing: ValidationError: property: Path `property` is required. {"timestamp":"2024-01-06T05:50:57.525+01:00"}
+error: createListing: MongoServerError: E11000 duplicate key error collection: SPLIT_ASSET.listings index: _id_ dup key: { _id: ObjectId('65956c078408637e84b514bd') } {"timestamp":"2024-01-06T05:52:39.318+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-06T05:56:48.242+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-06T05:59:30.990+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-06T06:00:33.899+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-06T06:16:02.835+01:00"}
+error: createListing: ValidationError: property: `` is not a valid enum value for path `property`. {"timestamp":"2024-01-06T06:44:36.312+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-06T06:46:11.466+01:00"}
