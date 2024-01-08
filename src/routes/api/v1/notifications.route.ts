@@ -1,6 +1,5 @@
 import { Router } from 'express';
 import NotificationController from '../../../controllers/api/v1/notifications.controller';
-
 const router = Router();
 const notificationController = new NotificationController()
 

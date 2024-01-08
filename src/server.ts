@@ -1,8 +1,6 @@
-// src/index.ts
 import express, {Request, Response} from 'express';
 import http from 'http';
 import cors from 'cors';
-import WebSocket from 'ws';
 import  AuthRoute from "./routes/api/v1/authentication.route";
 import  listingRoutes from "./routes/api/v1/listings.route";
 import  adminRoutes from "./routes/api/v1/admin.route";
@@ -10,8 +8,8 @@ import commonRoutes from "./routes/api/v1/common.route";
 import session  from 'express-session';
 import './init.mongo'
 import { config as dotenvConfig } from 'dotenv';
+import wss from './wss.server'; // Import the WebSocket server instance
 import logger from './logger';
-// import uploadImage from './helpers/cdn';
 dotenvConfig()
 console.log(process.env.ACCESS_TOKEN_SECRET)
 const SERVER_URL = '0.0.0.0'
@@ -36,6 +34,7 @@ app.use(cors())
 
 app.set('view engine', 'ejs');
 app.set('views', 'src/templates');
+app.set('wss', wss);
 
 const server = http.createServer(app);
 
