@@ -1,5 +1,6 @@
 import WebSocket from 'ws';
 import NotificationModel from "../models/notifications.model";
+import { decodeToken} from '../middlewares/jwt';
 
 class NotificationService {
   private wss: WebSocket.Server;
@@ -19,10 +20,20 @@ class NotificationService {
   }
 
   private sendNotificationToUser(userId: string, notification: Notification): void {
-    this.wss.clients.forEach((client) => {
-      if ((client as any).userId === userId && client.readyState === WebSocket.OPEN) {
-        client.send(JSON.stringify(notification));
+    this.wss.clients.forEach(async(client) => {
+      const WS_TOKEN = (client as any).token as string
+      const result = await decodeToken(WS_TOKEN) as any;
+      if(result.status){
+        if (client.readyState === WebSocket.OPEN) {
+            client.send(JSON.stringify(notification));
+          }
       }
+      else{
+        console.log(401)
+        const unAuthMessageObject = {status:false, message: 'Invalid or expired token'}
+        client.send(JSON.stringify(unAuthMessageObject));
+      }
+      
     });
   }
 

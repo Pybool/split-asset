@@ -3,11 +3,11 @@ import { Request, Response, NextFunction } from "express";
 import Xrequest from "../interfaces/extensions.interface";
 import config from "../settings";
 import User from "../models/user.model";
-import { config as dotenvConfig } from 'dotenv';
-dotenvConfig()
+import { config as dotenvConfig } from "dotenv";
+dotenvConfig();
 
 const SECRET_KEY: string = process.env.ACCESS_TOKEN_SECRET || "";
-console.log("XXXXX", SECRET_KEY)
+console.log("XXXXX", SECRET_KEY);
 export const decode = (req: Xrequest, res: Response, next: any) => {
   const reqHeaders: any = req.headers;
   if (config.ensureAuth) {
@@ -31,22 +31,42 @@ export const decode = (req: Xrequest, res: Response, next: any) => {
   }
 };
 
-export async function ensureAdmin(req: Xrequest, res: Response, next: NextFunction) {
+export const decodeToken = async (token: string) => {
+  try {
+    const decoded: any = jwt.verify(token, SECRET_KEY);
+    console.log("decode ", decoded)
+    const user = await User.findOne({ _id: decoded.aud });
+    console.log("user ", user)
+    if (user) {
+      return { status: true, user: user };
+    }
+    return { status: false };
+  } catch (error: any) {
+    console.log(error)
+    return { status: false };
+  }
+};
+
+export async function ensureAdmin(
+  req: Xrequest,
+  res: Response,
+  next: NextFunction
+) {
   try {
     const reqHeaders: any = req.headers;
     const accessToken = reqHeaders.authorization.split(" ")[1];
     const decoded: any = jwt.verify(accessToken, SECRET_KEY);
-    
+
     req.userId = decoded.aud;
     req.user = await User.findById(req.userId);
-    console.log("decode ", req.userId)
+    console.log("decode ", req.userId);
     if (req.user && req.user.isAdmin) {
       next();
     } else {
       res.status(403).json({ message: "Forbidden: User is not an admin" });
     }
   } catch (error: any) {
-    console.log("Error", error)
+    console.log("Error", error);
     res.status(403).json({ message: "Forbidden: User is not an admin" });
   }
 }

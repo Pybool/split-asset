@@ -1018,3 +1018,57 @@ info: MongoDB connected Successfully. {"timestamp":"2024-01-08T13:49:44.257+01:0
 info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T13:50:41.875+01:00"}
 info: Mongoose connected to db {"timestamp":"2024-01-08T13:50:41.940+01:00"}
 info: MongoDB connected Successfully. {"timestamp":"2024-01-08T13:50:41.961+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:17:19.307+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:17:19.382+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:17:19.426+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:17:57.591+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:17:57.658+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:17:57.673+01:00"}
+info: WebSocket connection established for user: 6595bb9b8e3928e112158544 {"timestamp":"2024-01-08T14:18:09.743+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:35:08.437+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:35:08.515+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:35:08.534+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:35:40.124+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:35:40.176+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:35:40.192+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:37:24.857+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:37:24.924+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:37:24.948+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:37:33.536+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:37:33.582+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:37:33.600+01:00"}
+info: WebSocket connection established for user: undefined {"timestamp":"2024-01-08T14:38:18.206+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:38:50.428+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:38:50.491+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:38:50.516+01:00"}
+info: WebSocket connection established for user: undefined {"timestamp":"2024-01-08T14:39:14.216+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MTAzMzQsImV4cCI6MTcwNDcyMDkzNCwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.HW7fTwsl0ejix5H-n_dWH7pHWpGxqRLPIB9RzgjPrYM {"timestamp":"2024-01-08T14:40:35.086+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:42:14.561+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:42:14.622+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:42:14.641+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MTAzMzQsImV4cCI6MTcwNDcyMDkzNCwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.HW7fTwsl0ejix5H-n_dWH7pHWpGxqRLPIB9RzgjPrYM {"timestamp":"2024-01-08T14:42:21.648+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:43:20.080+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:43:20.139+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:43:20.154+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MTAzMzQsImV4cCI6MTcwNDcyMDkzNCwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.HW7fTwsl0ejix5H-n_dWH7pHWpGxqRLPIB9RzgjPrYM {"timestamp":"2024-01-08T14:43:21.344+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MTA1NDYsImV4cCI6MTcwNDcyMTE0NiwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.9sglU-k1_kJiyhHizaxEnzVd2NucfbgaMrjrlZIcKMo {"timestamp":"2024-01-08T14:44:19.761+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T14:45:24.520+01:00"}
+info: WebSocket connection established for user: 1eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T14:46:59.553+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T14:47:36.072+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T14:54:40.651+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T14:54:40.695+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T14:54:40.706+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T14:54:47.170+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T15:21:35.733+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T15:22:24.993+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T15:22:25.199+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T15:22:25.299+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T15:22:27.646+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T15:23:13.898+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T15:23:14.072+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T15:23:14.106+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T15:23:15.747+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T15:24:21.469+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T15:24:21.567+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T15:24:21.593+01:00"}
+info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T15:24:26.384+01:00"}
