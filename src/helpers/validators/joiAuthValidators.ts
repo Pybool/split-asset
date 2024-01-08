@@ -24,6 +24,8 @@ const authResetPassword = Joi.object({
   password: Joi.string().min(4).required(),
 });
 
+
+
 const validations = {
   authSchema,
   loginSchema,

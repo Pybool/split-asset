@@ -4,11 +4,6 @@ import bcrypt from 'bcryptjs';
 import constants from './constants';
 
 const UserSchema = new Schema({
-  investorId:{
-    type: String,
-    default:Math.random().toString(),
-    required: false,
-  },
   email: {
     type: String,
     required: true,
@@ -48,6 +43,23 @@ const UserSchema = new Schema({
     type: String,
     required: false,
     default:''
+  },
+  language: {
+    type: String,
+    required: false,
+    default:'English (UK)',
+    enum: constants.userConstants.LANGUAGES,
+  },
+  currency: {
+    type: String,
+    required: false,
+    default:'Naira (NGN)',
+    enum: constants.userConstants.CURRENCIES,
+  },
+  rating: {
+    type: Number,
+    required: false,
+    default:0
   },
   phone: {
     type: String,
@@ -111,7 +123,6 @@ UserSchema.statics.getUserProfileById = async function (_id) {
       userName: user.userName,
       email: user.email,
       phone:user.phone,
-      investorId:user.investorId,
       address:user.address,
       accountType:user.accountType,
       issuerPublication:user.issuerPublication,
@@ -158,7 +169,6 @@ UserSchema.methods.getProfile = async function () {
       userName: this.userName,
       email: this.email,
       phone:this.phone,
-      investorId:this.investorId,
       address:this.address,
       accountType:this.accountType,
       issuerPublication:this.issuerPublication,

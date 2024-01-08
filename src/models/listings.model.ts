@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 import constants from "./constants";
-import InvestorEntity from "./investors.model";
 const Schema = mongoose.Schema;
 
 const ListingsSchema = new Schema({
@@ -111,6 +110,21 @@ const ListingsSchema = new Schema({
     default: "",
     required: true,
   },
+  bathrooms: {
+    type: String,
+    default: "",
+    required: false,
+  },
+  propertySize: {
+    type: String,
+    default: "",
+    required: false,
+  },
+  propertyOverview: {
+    type: String,
+    default: "",
+    required: false,
+  },
   assetCurrentValue: {
     type: Number,
     default: 0.0,
@@ -166,12 +180,11 @@ const ListingsSchema = new Schema({
     ref: "user",
     required: false,
   },
-  investors: [InvestorEntity.InvestorSchema],
 });
 
 ListingsSchema.post("save", async function (doc) {
   try {
-    const newRecord = doc.toObject();
+    doc.toObject();
   } catch (error) {
     console.error("Error sending WebSocket message:", error);
   }

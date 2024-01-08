@@ -49,6 +49,8 @@ const listingsConstants: ListingsConstants = {
 const userConstants: UserConstants = {
   ACCOUNT_TYPES: ["investor", "issuer"],
   ISSUER_PUBLICATION: ["public", "private"],
+  LANGUAGES: ["English (UK)", "English (US)"],
+  CURRENCIES: ["Naira (NGN)"],
 };
 
 const sharesConstants: string[] = ["1-10", "1-20", "1-30", "1-40", "1-50"];

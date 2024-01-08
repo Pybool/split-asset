@@ -1,3 +1,4 @@
+import Joi from "@hapi/joi";
 import { ICreateListing, ValidationStatus } from "../../interfaces/listing.interface";
 import {
   validateBase64Images,
@@ -62,6 +63,11 @@ const validators = {
       }
       return { success: true };
   },
+
+  bookmarkListing : Joi.object({
+    listing: Joi.string().required(),
+  })
 };
+
 
 export default validators;

@@ -8,6 +8,8 @@ import Xrequest from "../interfaces/extensions.interface";
 import utils from "../helpers/misc";
 import mailActions from "./mailservice";
 import User from "../models/user.model";
+import SubscriptionsModel from "../models/listing.subscriptions";
+import BookmarksModel from "../models/bookmarks.model";
 dotenvConfig();
 
 class ListingService {
@@ -21,7 +23,7 @@ class ListingService {
     const mimeType = allowedTypes.test(file.mimetype);
 
     if (ext && mimeType) {
-      cb(null, true); 
+      cb(null, true);
     } else {
       cb(
         new Error(
@@ -49,7 +51,17 @@ class ListingService {
     }
   }
 
-  private buildFilter(parameters: any) {
+  private async buildFilter(req:Xrequest,parameters: any) {
+    
+    if (parameters.filter == "1") {
+      return { isApproved: true };
+    }
+
+    if (parameters.filter==req.userId) {
+      const user = await User.findOne({ _id: req.userId }) as any
+      console.log("Listings Filter ===> ", parameters.filter, user.email)
+      return { email: user.email };
+    }
     return {};
   }
 
@@ -101,7 +113,7 @@ class ListingService {
         if (user) {
           requestBodyData.listedBy = user._id;
         }
-        console.log(requestBodyData)
+        console.log(requestBodyData);
         const listing = new ListingsModel(requestBodyData);
         const savedStatus = await listing.save();
         const checkSave = savedStatus._id.toString().length > 0;
@@ -124,7 +136,7 @@ class ListingService {
     }
   }
 
-  async modifyListing(req:Xrequest){
+  async modifyListing(req: Xrequest) {
     try {
       let phone = null;
       let email = null;
@@ -139,59 +151,61 @@ class ListingService {
       }
       if (phone && email) {
         let imageFile: any = req.file;
-        let fileName:any;
-        let filePath:any;
-        if(imageFile){
-        const today = new Date();
-        const dateFolder = `${today.getFullYear()}-${(today.getMonth() + 1)
-          .toString()
-          .padStart(2, "0")}-${today.getDate().toString().padStart(2, "0")}`;
+        let fileName: any;
+        let filePath: any;
+        if (imageFile) {
+          const today = new Date();
+          const dateFolder = `${today.getFullYear()}-${(today.getMonth() + 1)
+            .toString()
+            .padStart(2, "0")}-${today.getDate().toString().padStart(2, "0")}`;
 
-        const uploadFolderPath = path
-          .join(__dirname, "uploads")
-          .replace(path.join("src"), path.join("public"))
-          .replace(path.join("services"), "");
+          const uploadFolderPath = path
+            .join(__dirname, "uploads")
+            .replace(path.join("src"), path.join("public"))
+            .replace(path.join("services"), "");
 
-        const dailyFolderPath = path.resolve(uploadFolderPath, dateFolder);
-        // Create the uploads folder if it doesn't exist
-        if (!fs.existsSync(uploadFolderPath)) {
-          fs.mkdirSync(uploadFolderPath);
+          const dailyFolderPath = path.resolve(uploadFolderPath, dateFolder);
+          // Create the uploads folder if it doesn't exist
+          if (!fs.existsSync(uploadFolderPath)) {
+            fs.mkdirSync(uploadFolderPath);
+          }
+          // Create the daily folder if it doesn't exist
+          if (!fs.existsSync(dailyFolderPath)) {
+            fs.mkdirSync(dailyFolderPath);
+          }
+          fileName = `image_${Date.now()}.png`;
+          filePath = path.resolve(dailyFolderPath, fileName);
+
+          const filePathWithoutPublic = filePath.split(path.join("public"))[1];
+          const normalizedFilePath = filePathWithoutPublic.replace(
+            new RegExp(path.sep.replace("\\", "\\\\"), "g"),
+            "/"
+          );
+
+          requestBodyData.assetImages = [normalizedFilePath];
         }
-        // Create the daily folder if it doesn't exist
-        if (!fs.existsSync(dailyFolderPath)) {
-          fs.mkdirSync(dailyFolderPath);
-        }
-        fileName = `image_${Date.now()}.png`;
-        filePath = path.resolve(dailyFolderPath, fileName);
-
-        const filePathWithoutPublic = filePath.split(path.join("public"))[1];
-        const normalizedFilePath = filePathWithoutPublic.replace(
-          new RegExp(path.sep.replace("\\", "\\\\"), "g"),
-          "/"
-        );
-
-        requestBodyData.assetImages = [normalizedFilePath];
-      }
         const user = await User.findOne({ email: requestBodyData.email });
         if (user) {
           requestBodyData.listedBy = user._id;
         }
-        console.log(requestBodyData)
-        const existingListing:any = await ListingsModel.findOne({_id:requestBodyData._id})
-        if(!existingListing){
+        console.log(requestBodyData);
+        const existingListing: any = await ListingsModel.findOne({
+          _id: requestBodyData._id,
+        });
+        if (!existingListing) {
           return { status: false, id: "", message: "falseCommit" };
         }
-        Object.keys(requestBodyData).forEach((key)=>{
-          if(key !== '_id' && key !== 'image' && requestBodyData[key] !== ''){
-            existingListing[key] = requestBodyData[key]
+        Object.keys(requestBodyData).forEach((key) => {
+          if (key !== "_id" && key !== "image" && requestBodyData[key] !== "") {
+            existingListing[key] = requestBodyData[key];
           }
-        })
+        });
         const savedStatus = await existingListing.save();
         const checkSave = savedStatus._id.toString().length > 0;
         if (checkSave) {
           // Use file.buffer instead of converting base64
-          if(imageFile){
-            console.log(filePath, imageFile)
+          if (imageFile) {
+            console.log(filePath, imageFile);
             fs.writeFileSync(filePath, imageFile?.buffer);
           }
           return {
@@ -199,7 +213,6 @@ class ListingService {
             id: savedStatus._id.toString(),
             message: "trueCommit",
           };
-          
         } else {
           return { status: checkSave, id: "", message: "falseCommit" };
         }
@@ -211,14 +224,15 @@ class ListingService {
     }
   }
 
-  async getListings(req:Xrequest){
-    const listingsUrl = ''
+  async getListings(req: Xrequest) {
+    const listingsUrl = "";
     try {
       const queryParameters = req.query;
       const page = Number(queryParameters.page as string) || 1;
       const perPage = Number(queryParameters.perPage as string) || 10;
-      const filter: any = this.buildFilter(queryParameters);
+      const filter: any = await this.buildFilter(req,queryParameters);
       const totalCount = await ListingsModel.countDocuments(filter);
+      
 
       // Find documents with pagination and population
       const assetListings = await ListingsModel.find(filter)
@@ -253,13 +267,13 @@ class ListingService {
       }
       return { status: true, data: assetListings, paginationInfo, links };
     } catch (error: any) {
-      console.log(error)
+      console.log(error);
       return { status: false, error: error.message };
     }
   }
 
-  async filterListings(req:Xrequest){
-    const listingsUrl = ''
+  async filterListings(req: Xrequest) {
+    const listingsUrl = "";
     try {
       const queryParameters = req.query;
       const page = Number(queryParameters.page as string) || 1;
@@ -300,66 +314,228 @@ class ListingService {
       }
       return { status: true, data: assetListings, paginationInfo, links };
     } catch (error: any) {
-      console.log(error)
+      console.log(error);
       return { status: false, error: error.message };
     }
   }
 
-  async addInvestorToListing(req: Xrequest) {
-    // Find the listing by ID and update the investors field
-    try {
-      const listingId = req.body.listingId;
-      const investorData = { investorId: req.body.userId };
-
-      ListingsModel.findByIdAndUpdate(
-        listingId,
-        { $push: { investors: investorData } },
-        (err: any, updatedListing: any) => {
-          if (err) {
-            console.error("Error updating listing:", err);
-          } else {
-            console.log("Updated listing:", updatedListing);
-          }
-        }
-      );
-    } catch (error: any) {
-      throw error;
-    }
-  }
-
-  async assignListingShares(req:Xrequest){
+  async assignListingShares(req: Xrequest) {
     try {
       const listingId = req.query.id;
-      const listingData = await ListingsModel.findById(listingId) as any
-      if(listingData){
-        listingData.shares = req.body.shares 
-        await listingData.save()
-        return {status:true, message: 'trueCommit'}
-      }
-      else{
-        return {status:false, message: 'falseCommit'}
+      const listingData = (await ListingsModel.findById(listingId)) as any;
+      if (listingData) {
+        listingData.shares = req.body.shares;
+        await listingData.save();
+        return { status: true, message: "trueCommit" };
+      } else {
+        return { status: false, message: "falseCommit" };
       }
     } catch (error: any) {
       throw error;
     }
   }
 
-  async removeInvestorFromListing(req: Xrequest) {
+  sumShares(data: any[]) {
+    return data.reduce((totalShares, item) => totalShares + item.shares, 0);
+  }
+
+  async getAssetSharesLeft(listingId: string) {
+    try {
+      const shares = await SubscriptionsModel.find({ listing: listingId });
+      const listingData = (await ListingsModel.findById(listingId)) as any;
+      const [lower, upper] = listingData.shares.split("-").map(Number);
+      return {
+        status: true,
+        sharesLeft: upper - this.sumShares(shares),
+      };
+    } catch (err: any) {
+      return {
+        status: true,
+        sharesLeft: "N/A",
+      };
+    }
+  }
+
+  async addListingSubscriber(req: Xrequest) {
+    try {
+      let checkSave: any, result: any;
+      const subscription = req.body;
+
+      subscription.user = req.userId;
+      const existingSubscriptionObjects = await SubscriptionsModel.find({
+        user: subscription.user,
+        listing: subscription.listing,
+      });
+      let sharesLeftResult: any = await this.getAssetSharesLeft(
+        subscription.listing
+      );
+      if (sharesLeftResult.sharesLeft > 0) {
+        if (existingSubscriptionObjects.length > 0) {
+          existingSubscriptionObjects[0].shares =
+            this.sumShares(existingSubscriptionObjects) + subscription.shares;
+          result = await existingSubscriptionObjects[0].save();
+          checkSave = result._id.toString().length > 0;
+        } else {
+          const subscriptionObject = await new SubscriptionsModel(subscription);
+          result = await subscriptionObject.save();
+          checkSave = result._id.toString().length > 0;
+          console.log("Created ", result._id);
+        }
+
+        if (checkSave) {
+          return {
+            status: checkSave,
+            id: result._id.toString(),
+            sharesLeft: sharesLeftResult,
+            message: "Asset subscription was successful",
+          };
+        } else {
+          return {
+            status: checkSave,
+            id: "",
+            message: "Asset subscription was unsuccessful",
+          };
+        }
+      } else {
+        return {
+          status: false,
+          id: "",
+          message: "No shares available for reservation at this moment",
+        };
+      }
+    } catch (error: any) {
+      throw error;
+    }
+  }
+
+  async removeListingSubscriber(req: Xrequest) {
     // Find the listing by ID and update the investors field
     try {
-      const listingId = req.body.listingId;
-      const investorIdToRemove = req.body.investorId;
-      ListingsModel.findByIdAndUpdate(
-        listingId,
-        { $pull: { investors: { investorId: investorIdToRemove } } },
-        (err: any, updatedListing: any) => {
-          if (err) {
-            console.error("Error updating listing:", err);
-          } else {
-            console.log("Updated listing:", updatedListing);
-          }
+      const subscription = req.body;
+      subscription.user = req.userId;
+      const filter = {
+        user: subscription.user,
+        listing: subscription.listing,
+      };
+      const subscriptionObj = await SubscriptionsModel.find(filter);
+
+      if (subscriptionObj.length > 0) {
+        subscriptionObj[0].shares = subscriptionObj[0].shares - 1;
+        await subscriptionObj[0].save();
+        let msg = "Share has been updated successfully";
+        if (subscriptionObj[0].shares == 0 || subscription.shares == -1) {
+          msg = "Documents deleted successfully";
+          await SubscriptionsModel.deleteMany(filter);
         }
-      );
+
+        return {
+          status: true,
+          message: msg,
+        };
+      } else {
+        return {
+          status: false,
+          message: "No matching documents found",
+        };
+      }
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async getListingSubscriptionsByAssetId(req: Xrequest) {
+    try {
+      const subscriptions = await SubscriptionsModel.find(req.body)
+        .sort({ createdAt: -1 })
+        .exec();
+      console.log("subscriptions ", subscriptions);
+      if (subscriptions) {
+        return { status: true, data: subscriptions };
+      } else {
+        return { status: false, data: [] };
+      }
+    } catch (error: any) {
+      throw error;
+    }
+  }
+
+  async getListingSubscriptionsByUserId(req: Xrequest) {
+    try {
+      const subscriptions = await SubscriptionsModel.find({ user: req.userId });
+      const fullSubscriptions: any[] = [];
+      for (const subscription of subscriptions) {
+        try {
+          const listingObj =
+            (await ListingsModel.findOne({
+              _id: subscription.listing,
+            })) || {};
+
+          if (listingObj) {
+            subscription.listing = listingObj;
+            fullSubscriptions.push(subscription);
+          }
+        } catch (error) {
+          console.error("Error fetching listing:", error);
+        }
+      }
+      if (fullSubscriptions) {
+        return { status: true, data: fullSubscriptions };
+      } else {
+        return { status: false, data: [] };
+      }
+    } catch (error: any) {
+      throw error;
+    }
+  }
+
+  async bookMarkListing(req: Xrequest, data: any) {
+    try {
+      data.user = req.userId;
+      if (await ListingsModel.findById(data.listing)) {
+        const existBookMark = await BookmarksModel.find(data);
+        if (existBookMark.length == 0) {
+          const bookMark = await new BookmarksModel(data);
+          const resultObj = await bookMark.save();
+          if (resultObj) {
+            return { status: true, message: "trueCommit" };
+          } else {
+            return { status: false, message: "falseCommit" };
+          }
+        } else {
+          return { status: false, message: "exists" };
+        }
+      } else {
+        return { status: false, message: "notFound" };
+      }
+    } catch (error: any) {
+      throw error;
+    }
+  }
+
+  async getBookMarksByUserId(req: Xrequest) {
+    try {
+      const BookMarks = await BookmarksModel.find({ user: req.userId });
+      const fullBookMarks: any[] = [];
+      for (const bookMark of BookMarks) {
+        try {
+          const listingObj =
+            (await ListingsModel.findOne({
+              _id: bookMark.listing,
+            })) || {};
+
+          if (listingObj) {
+            bookMark.listing = listingObj;
+            fullBookMarks.push(bookMark);
+          }
+        } catch (error) {
+          console.error("Error fetching listing:", error);
+        }
+      }
+      if (fullBookMarks) {
+        return { status: true, data: fullBookMarks };
+      } else {
+        return { status: false, data: [] };
+      }
     } catch (error: any) {
       throw error;
     }

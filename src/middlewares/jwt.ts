@@ -25,7 +25,6 @@ export const decode = (req: Xrequest, res: Response, next: any) => {
     const decoded: any = jwt.verify(accessToken, SECRET_KEY);
     req.userId = decoded.aud;
     req.user = User.findOne({ _id: req.userId });
-    req.investorId = req.user.investorId;
     return next();
   } catch (error: any) {
     return res.status(401).json({ success: false, message: error.message });
@@ -40,8 +39,7 @@ export async function ensureAdmin(req: Xrequest, res: Response, next: NextFuncti
     
     req.userId = decoded.aud;
     req.user = await User.findById(req.userId);
-    req.investorId = req.user.investorId;
-    console.log("decode ", req.user.isAdmin)
+    console.log("decode ", req.userId)
     if (req.user && req.user.isAdmin) {
       next();
     } else {

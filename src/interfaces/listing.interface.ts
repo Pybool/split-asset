@@ -4,6 +4,14 @@ export interface IListing{
   getListings:RequestHandler;
   filterListings:RequestHandler;
   createListing:RequestHandler ;
+  getListingSubscriptionsByAssetId: RequestHandler;
+  addListingSubscriber:RequestHandler;
+  removeListingSubscriber:RequestHandler;
+  getSharesLeft: RequestHandler;
+  bookMarkListing:RequestHandler;
+  getListingSubscriptionsByUserId:RequestHandler;
+  getBookMarksByUserId:RequestHandler;
+  
 }
 export interface ICreateListing{
   email:string;

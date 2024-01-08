@@ -6,7 +6,6 @@ interface Xrequest extends Request {
   user?:any;
   payload?:any;
   body:any;
-  investorId?:string;
 
 }
 

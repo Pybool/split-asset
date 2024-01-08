@@ -9,7 +9,6 @@ import validations from "../helpers/validators/joiAuthValidators";
 import Xrequest from "../interfaces/extensions.interface";
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
-import InvestorEntity from "../models/investors.model";
 import { config as dotenvConfig } from "dotenv";
 import Otp from "../models/otp.model";
 dotenvConfig();
@@ -311,33 +310,16 @@ export class Authentication {
   public async changeUserAccountType() {
     try {
       const userId = this.req.body.userId;
-      const investorId = this.req.body.investorId;
+      let savedUser;
       const user: any = await User.findById(userId);
-      user.accountType = this.req.body.accountType;
-      let investor = await InvestorEntity.InvestorModel.findOne({
-        _id: investorId,
-      });
-      if (investor) {
-        console.log("Investor ID:", investor._id);
-        if (user.accountType === "issuer") {
-          investor.isActive = false;
-        } else {
-          investor.isActive = true;
-        }
-        await investor.save();
-      } else {
-        investor = await InvestorEntity.InvestorModel.create({
-          isActive: true,
-        });
-        user.investorId = investor._id;
-        console.log("New investor created. Investor ID:", investor._id);
+      if (user) {
+        user.accountType = this.req.body.accountType;
+        savedUser = await user.save();
       }
-
-      const savedUser = await user.save();
       return {
         status: savedUser.accountType === this.req.body.accountType,
         message: "Sucessfull",
-        data: investor,
+        data: '',
       };
     } catch (error: any) {
       throw error;

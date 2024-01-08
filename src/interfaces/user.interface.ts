@@ -6,7 +6,6 @@ interface IUserProfile {
     userName: string;
     email: string;
     phone: string;
-    investorId: string;
     address: string;
     accountType: string;
     issuerPublication: string;
