@@ -1,15 +1,20 @@
 // websocket.server.ts
 import WebSocket from 'ws';
+import http from 'http';
+import url from 'url';
 
-const wss = new WebSocket.Server();
+const createWebSocketServer = (server: http.Server) => {
+  const wss = new WebSocket.Server({ server });
 
-wss.on('connection', (ws: WebSocket & { userId?: string }) => {
-  ws.on('message', (message: string) => {
-    
-    ws.userId = message;
+  wss.on('connection', (ws: WebSocket & { userId?: string }, req: http.IncomingMessage) => {
+    // Extract userId from the query parameters of the WebSocket URL
+    const queryObject = url.parse(req.url!, true).query as { userId?: string };
+    ws.userId = queryObject.userId || undefined;
 
     console.log(`WebSocket connection established for user: ${ws.userId}`);
   });
-});
 
-export default wss;
+  return wss;
+};
+
+export default createWebSocketServer;

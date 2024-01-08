@@ -1,4 +1,4 @@
-// notification.controller.ts
+// notification.controller.ts (Websocket sending added and works)
 import { Request, Response } from 'express';
 import NotificationService from '../../../services/notificationservice';
 import Xrequest from '../../../interfaces/extensions.interface';
@@ -20,12 +20,12 @@ class NotificationController {
     try {
       const { notificationId } = req.params;
       const notificationService = new NotificationService(req.app.get('wss'));
-      const success = await notificationService.sendNotification(req.userId!,notificationId);
+      const result = await notificationService.sendNotification(req.userId!,notificationId);
 
-      if (success) {
+      if (result.status) {
         res.json({ status: true, message: 'Notification sent successfully' });
       } else {
-        res.json({ status: false, message: 'Failed to send notification' });
+        res.json(result);
       }
     } catch (error) {
       console.error(error);

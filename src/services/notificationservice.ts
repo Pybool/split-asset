@@ -30,6 +30,7 @@ class NotificationService {
     const notification = await NotificationModel.findOne({_id:notificationId})
     if (notification) {
         this.sendNotificationToUser(userId, notification);
+        return {status:true, message: 'Notification sent'}
       } else {
         return {status:false, message: 'No Notification was found that matches the id provided'}
       }
