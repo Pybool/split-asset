@@ -53,7 +53,7 @@ const userConstants: UserConstants = {
   CURRENCIES: ["Naira (NGN)"],
 };
 
-const sharesConstants: string[] = ["1-10", "1-20", "1-30", "1-40", "1-50"];
+const sharesConstants: string[] = ["1-10", "1-20", "1-30", "1-40", "1-50", ""];
 
 const constants = {
   listingsConstants,

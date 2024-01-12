@@ -161,7 +161,7 @@ const ListingsSchema = new Schema({
     required: false,
   },
   daysLeft: {
-    type: Number,
+    type: Date,
     default: 0,
     required: false,
   },
@@ -169,6 +169,11 @@ const ListingsSchema = new Schema({
     type: Boolean,
     default: false,
     required: true,
+  },
+  isPaid: {
+    type: Boolean,
+    default: false,
+    required: false,
   },
   approvalTime: {
     type: Date,

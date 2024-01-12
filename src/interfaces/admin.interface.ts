@@ -5,4 +5,5 @@ export interface IAdmin {
   assignListingShares: RequestHandler;
   publishListing:RequestHandler;
   toggleUserAdminStatus: RequestHandler;
+  togglePaymentConfirmation: RequestHandler;
 }

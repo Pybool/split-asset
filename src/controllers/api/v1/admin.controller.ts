@@ -77,6 +77,20 @@ const adminController:IAdmin  = {
       next(error);
     }
   },
+
+  togglePaymentConfirmation: async (req: Xrequest, res: Response, next: NextFunction) => {
+    try {
+      let status = 400;
+      const adminService = new AdminService();
+      const result = await adminService.togglePaymentConfirmation(req);
+      if (result) status = 200;
+      res.status(status).json(result);
+
+    } catch (error: any) {
+      error.status = 422;
+      next(error);
+    }
+  },
 }
 
 export default adminController

@@ -1072,3 +1072,399 @@ info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T15:
 info: Mongoose connected to db {"timestamp":"2024-01-08T15:24:21.567+01:00"}
 info: MongoDB connected Successfully. {"timestamp":"2024-01-08T15:24:21.593+01:00"}
 info: WebSocket connection established for user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ3MjE0MzEsImV4cCI6MTcwNDczMjAzMSwiYXVkIjoiNjU5NWJiOWI4ZTM5MjhlMTEyMTU4NTQ0IiwiaXNzIjoic3BsaXQtYXNzZXQuY29tIn0.LiT7K7h-n28eJMrsEj5KH6co1CvuVn3-ZIHkWUVzGUw {"timestamp":"2024-01-08T15:24:26.384+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T15:44:40.627+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T15:44:40.668+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T15:44:40.680+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T19:29:22.670+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T19:29:22.778+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T19:29:22.811+01:00"}
+error: createListing: ValidationError: shares: `` is not a valid enum value for path `shares`. {"timestamp":"2024-01-08T19:57:44.212+01:00"}
+error: createListing: ValidationError: shares: `` is not a valid enum value for path `shares`. {"timestamp":"2024-01-08T19:57:53.470+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T19:59:45.600+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T19:59:45.682+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T19:59:45.705+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-08T20:00:23.700+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-08T20:00:23.790+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-08T20:00:23.815+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T08:27:42.183+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T08:27:42.325+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T08:27:42.357+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T08:33:50.768+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T08:33:50.825+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T08:33:50.839+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T08:37:11.300+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T08:37:11.351+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T08:37:11.365+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T08:39:52.793+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T08:39:52.835+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T08:39:52.846+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T08:41:51.346+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T08:41:51.392+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T08:41:51.405+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T08:43:25.858+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T08:43:25.902+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T08:43:25.915+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T13:17:35.793+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T13:17:35.882+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T13:17:35.924+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:28:02.741+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:28:02.784+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:28:02.795+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:29:53.151+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:29:53.207+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:29:53.223+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:33:19.866+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:33:19.942+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:33:19.964+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:33:40.254+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:33:40.325+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:33:40.342+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:36:59.702+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:36:59.843+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:36:59.879+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:38:28.746+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:38:28.784+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:38:28.797+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:40:59.476+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:40:59.514+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:40:59.529+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:41:50.948+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:41:51.065+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:41:51.098+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:43:05.860+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:43:05.920+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:43:05.950+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T15:56:49.242+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T15:56:49.301+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T15:56:49.333+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T23:37:08.233+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T23:37:08.339+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T23:37:08.365+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T23:40:22.645+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T23:40:22.765+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T23:40:22.840+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T23:40:55.312+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T23:40:55.402+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T23:40:55.423+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-09T23:43:06.741+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-09T23:43:06.803+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-09T23:43:06.821+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T07:12:43.213+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T07:12:43.244+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T07:12:43.255+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T07:41:06.324+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T07:41:06.404+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T07:41:06.420+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-10T15:38:33.359+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-10T15:38:33.424+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T15:51:53.900+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T15:51:53.960+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T15:51:53.970+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T15:55:21.212+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T15:55:21.285+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T15:55:21.299+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T15:58:42.527+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T15:58:42.586+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T15:58:42.604+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T16:13:53.428+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T16:13:53.469+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T16:13:53.482+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T19:22:10.935+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T19:22:11.005+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T19:22:11.020+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T19:24:38.726+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T19:24:38.794+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T19:24:38.815+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T19:38:47.449+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T19:38:47.557+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T19:38:47.578+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T19:52:11.037+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T19:52:11.082+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T19:52:11.095+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T22:22:10.457+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T22:22:10.540+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T22:22:10.562+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-10T22:23:52.663+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-10T22:23:52.740+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-10T22:23:52.767+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T07:53:54.675+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T07:53:54.717+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T07:53:54.727+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:01:53.432+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:01:53.484+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:01:53.501+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:04:16.716+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:04:16.785+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:04:16.802+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:05:13.339+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:05:13.391+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:05:13.408+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:05:52.576+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:05:52.653+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:05:52.672+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:07:11.078+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:07:11.143+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:07:11.161+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:07:45.305+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:07:45.359+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:07:45.378+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:15:16.970+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:15:17.030+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:15:17.046+01:00"}
+error: createListing: TypeError: imageFiles is not iterable {"timestamp":"2024-01-11T08:16:08.773+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:17:07.222+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:17:07.291+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:17:07.312+01:00"}
+error: createListing: TypeError: imageFiles is not iterable {"timestamp":"2024-01-11T08:17:11.378+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:19:33.559+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:19:33.647+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:19:33.687+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:21:55.679+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:21:55.799+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:21:55.924+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:24:42.891+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:24:42.999+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:24:43.042+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:29:42.108+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:29:42.225+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:29:42.349+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:30:27.219+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:30:27.301+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:30:27.326+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:31:05.515+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:32:26.372+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:32:26.456+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:32:26.483+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:32:30.087+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:34:30.254+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:34:30.311+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:34:30.331+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:34:35.954+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:36:25.268+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:36:25.330+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:36:25.348+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:36:28.928+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:36:49.266+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:41:54.471+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:43:52.953+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:43:53.072+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:43:53.214+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:43:56.556+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:44:27.200+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:44:27.247+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:44:27.262+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:44:37.602+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:47:39.414+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:48:11.645+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:48:11.697+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:48:11.712+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:48:14.098+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:48:56.437+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:48:56.520+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:48:56.543+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:50:11.253+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:50:11.345+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:50:11.360+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T08:51:34.344+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T08:51:34.416+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T08:51:34.433+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T09:02:54.083+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T09:02:54.143+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T09:02:54.172+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T10:08:15.452+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T10:08:15.520+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T10:08:15.538+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T10:30:13.769+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T10:30:13.843+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T10:30:13.875+01:00"}
+error: addSubscriber: ValidationError: paymentOwed: Path `paymentOwed` is required., paymentComplete: Path `paymentComplete` is required. {"timestamp":"2024-01-11T10:30:55.249+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T10:31:59.281+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T10:31:59.335+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T10:31:59.349+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T10:49:31.827+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T10:49:31.887+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T10:49:31.909+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T10:52:25.092+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T10:52:25.168+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T10:52:25.190+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:18:38.868+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:18:38.921+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:18:38.941+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:22:20.555+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:22:20.615+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:22:20.637+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:27:10.334+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:27:10.402+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:27:10.422+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:28:20.345+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:28:20.418+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:28:20.446+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:29:19.910+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:29:20.007+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:29:20.041+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:30:37.606+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:30:37.671+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:30:37.689+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:36:17.769+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:36:17.829+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:36:17.846+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:38:57.806+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:38:57.919+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:38:57.959+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:43:45.527+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:43:45.582+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:43:45.598+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:44:50.110+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:44:50.384+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:44:50.496+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:47:25.752+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:47:25.809+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:47:25.825+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T11:58:58.059+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T11:58:58.117+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T11:58:58.134+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T12:01:04.947+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T12:01:05.070+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T12:01:05.118+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T12:03:55.585+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T12:03:55.663+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T12:03:55.688+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T12:08:21.056+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T12:08:21.099+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T12:08:21.111+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T15:56:27.416+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T15:56:27.460+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T15:56:27.475+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T15:56:49.734+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T15:56:49.817+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T15:56:49.838+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T16:00:35.455+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T16:00:35.509+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T16:00:35.529+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T16:01:41.575+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T16:01:41.687+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T16:01:41.719+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T16:03:13.801+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T16:03:13.869+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T16:03:13.889+01:00"}
+error: uploadPaymentProof: SyntaxError: Unexpected non-whitespace character after JSON at position 3 {"timestamp":"2024-01-11T16:03:21.438+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T16:04:01.423+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T16:04:01.489+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T16:04:01.508+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T16:04:21.070+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T16:04:21.139+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T16:04:21.155+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T16:05:07.308+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T16:05:07.384+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T16:05:07.404+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T18:57:45.296+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T18:57:45.385+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T18:57:45.400+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T18:59:06.618+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T18:59:06.755+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T18:59:06.799+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-11T23:31:25.470+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-11T23:31:25.545+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-11T23:31:25.585+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T10:51:43.892+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T10:51:44.000+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T10:51:44.050+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T11:09:25.570+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T11:09:25.621+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T11:09:25.640+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T11:10:16.305+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T11:10:16.348+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T11:10:16.359+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T15:38:07.587+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T15:38:07.666+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T15:38:07.687+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T15:43:33.433+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T15:43:33.573+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T15:43:33.639+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T15:46:40.770+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T15:46:40.851+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T15:46:40.879+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T18:39:05.606+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T18:39:05.655+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T18:39:05.672+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T18:44:26.101+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T18:44:26.180+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T18:44:26.214+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T18:46:10.091+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T18:46:10.197+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T18:46:10.220+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T18:49:29.216+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T18:49:29.278+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T18:49:29.292+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T19:01:34.053+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T19:01:34.131+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T19:01:34.160+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T19:02:47.950+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T19:02:48.046+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T19:02:48.070+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T19:04:04.729+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T19:04:04.785+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T19:04:04.797+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T19:05:45.792+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T19:05:45.861+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T19:05:45.879+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T20:46:52.033+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T20:46:52.102+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T20:46:52.122+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:24:56.514+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:24:56.592+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:24:56.621+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:25:46.023+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:25:46.080+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:25:46.100+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:27:04.448+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:27:04.515+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:27:04.535+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:49.475+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:49.504+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:56.484+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:56.490+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:56.548+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:38:30.434+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:38:30.510+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:38:30.531+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:47:53.805+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:47:53.862+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:47:53.879+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:49:45.698+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:49:45.795+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:49:45.812+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:52:04.646+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:52:04.751+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:52:04.797+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:53:02.884+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:53:02.963+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:53:02.981+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T21:57:11.454+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T21:57:11.689+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T21:57:11.773+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T22:02:04.630+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T22:02:04.699+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T22:02:04.717+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T22:03:25.779+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T22:03:25.904+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T22:03:25.956+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T22:05:38.067+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T22:05:38.137+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T22:05:38.159+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T22:06:54.892+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T22:06:55.045+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T22:06:55.101+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T22:07:10.394+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T22:07:10.463+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T22:07:10.488+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T22:08:04.073+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T22:08:04.154+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T22:08:04.184+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.672+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.677+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.683+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.732+01:00"}
+info: Development Server is running on 0.0.0.0:3000 {"timestamp":"2024-01-12T22:15:07.078+01:00"}
+info: Mongoose connected to db {"timestamp":"2024-01-12T22:15:07.337+01:00"}
+info: MongoDB connected Successfully. {"timestamp":"2024-01-12T22:15:07.396+01:00"}

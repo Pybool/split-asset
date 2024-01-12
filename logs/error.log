@@ -27,3 +27,30 @@ error: createListing: ValidationError: "user" is required {"timestamp":"2024-01-
 error: createListing: ValidationError: "user" is required {"timestamp":"2024-01-07T10:22:59.961+01:00"}
 error: createListing: ValidationError: "user" is required {"timestamp":"2024-01-07T10:24:06.485+01:00"}
 error: createListing: ValidationError: user: Path `user` is required. {"timestamp":"2024-01-07T10:28:59.075+01:00"}
+error: createListing: ValidationError: shares: `` is not a valid enum value for path `shares`. {"timestamp":"2024-01-08T19:57:44.212+01:00"}
+error: createListing: ValidationError: shares: `` is not a valid enum value for path `shares`. {"timestamp":"2024-01-08T19:57:53.470+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-10T15:38:33.359+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-10T15:38:33.424+01:00"}
+error: createListing: TypeError: imageFiles is not iterable {"timestamp":"2024-01-11T08:16:08.773+01:00"}
+error: createListing: TypeError: imageFiles is not iterable {"timestamp":"2024-01-11T08:17:11.378+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:31:05.515+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:32:30.087+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:34:35.954+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:36:28.928+01:00"}
+error: createListing: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined {"timestamp":"2024-01-11T08:36:49.266+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:41:54.471+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:43:56.556+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:44:37.602+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:47:39.414+01:00"}
+error: createListing: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) {"timestamp":"2024-01-11T08:48:14.098+01:00"}
+error: addSubscriber: ValidationError: paymentOwed: Path `paymentOwed` is required., paymentComplete: Path `paymentComplete` is required. {"timestamp":"2024-01-11T10:30:55.249+01:00"}
+error: uploadPaymentProof: SyntaxError: Unexpected non-whitespace character after JSON at position 3 {"timestamp":"2024-01-11T16:03:21.438+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:49.475+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:49.504+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:56.484+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:56.490+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T21:32:56.548+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.672+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.677+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.683+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.732+01:00"}

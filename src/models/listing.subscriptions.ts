@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const SubscriptionsSchema = new Schema({
   user: {
-    type: String,
+    type: mongoose.Schema.Types.Mixed,
     default: "",
     required: true,
   },
@@ -15,6 +15,14 @@ const SubscriptionsSchema = new Schema({
   shares: {
     type: Number,
     required: true,
+  },
+  paymentComplete: {
+    type: Boolean,
+    required: false,
+  },
+  paymentOwed: {
+    type: Number,
+    required: false,
   },
   createdAt: {
     type: Date,

@@ -86,7 +86,6 @@ const jwthelper = {
               err.name === "JsonWebTokenError" ? "Unauthorized" : err.message;
             resolve({ aud: false });
           }
-          console.log("===========> ", payload);
           resolve(payload);
         }
       );

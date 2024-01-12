@@ -242,7 +242,7 @@ export class Authentication {
 
       const accessToken = await jwthelper.signAccessToken(user.id);
       const refreshToken = await jwthelper.signRefreshToken(user.id);
-      return { status: true, data: user, accessToken, refreshToken };
+      return { status: true, data: await user.getProfile(), accessToken, refreshToken };
     } catch (error) {
       console.log(error);
       return { status: false, message: message.auth.loginError };
@@ -252,6 +252,7 @@ export class Authentication {
   public async getRefreshToken(next: any) {
     try {
       const { refreshToken } = this.req.body;
+      console.log("Refresh token ", refreshToken)
       if (!refreshToken) throw createError.BadRequest();
       const { aud } = (await jwthelper.verifyRefreshToken(
         refreshToken,

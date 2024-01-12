@@ -25,7 +25,28 @@ const listingControllers: IListing = {
     }
   },
 
-  createListing: async (req: Request, res: Response) => {
+  getListingById: async (req: Xrequest, res: Response) => {
+    try {
+      const listingService = new ListingService();
+      const percentageFunding = await listingService.getAssetPercentageFunded(req);
+      let result:any = await listingService.getListingById(req)
+      result.percentageFunded = percentageFunding
+      return res.status(200).json(result);
+    } catch (error) {
+      return res.status(400).json({ status: false, error: error });
+    }
+  },
+
+  searchByText: async (req: Xrequest, res: Response) => {
+    try {
+      const listingService = new ListingService();
+      return res.status(200).json(await listingService.searchByText(req));
+    } catch (error) {
+      return res.status(400).json({ status: false, error: error });
+    }
+  },
+
+  createListing: async (req: Xrequest, res: Response) => {
     try {
       const validation = validators.createListing(JSON.parse(req.body.data));
       if (validation.success) {
@@ -73,6 +94,30 @@ const listingControllers: IListing = {
       res.status(200).json(subscriptions);
     } catch (error) {
       logger.error("getSubscriptions: " + error);
+      res.status(400).json({ error: "Internal Server Error" });
+    }
+  },
+
+  getSubscriptionsLineItemsByListingId:async (req: Request, res: Response) => {
+    try {
+      const listingService = new ListingService();
+      const subscriptions =
+        await listingService.getSubscriptionsLineItemsByListingId(req);
+      res.status(200).json(subscriptions);
+    } catch (error) {
+      logger.error("getSubscriptionsLineItems: " + error);
+      res.status(400).json({ error: "Internal Server Error" });
+    }
+  },
+
+  uploadPaymentProof:async (req: Request, res: Response) => {
+    try {
+      const listingService = new ListingService();
+      const result =
+        await listingService.uploadPaymentProof(req);
+      res.status(200).json(result);
+    } catch (error) {
+      logger.error("uploadPaymentProof: " + error);
       res.status(400).json({ error: "Internal Server Error" });
     }
   },
@@ -159,7 +204,6 @@ const listingControllers: IListing = {
           .status(200)
           .json({ status: result.status, message: result.message });
       } else {
-        // Invalid request, send validation error
         res.status(400).json({ status: false, message: validation.error });
       }
     } catch (error) {
@@ -177,6 +221,17 @@ const listingControllers: IListing = {
       res.status(200).json(subscriptions);
     } catch (error) {
       logger.error("getSubscriptions: " + error);
+      res.status(400).json({ error: "Internal Server Error" });
+    }
+  },
+
+  getAssetPercentageFunded: async (req: Request, res: Response) => {
+    try {
+      const listingService = new ListingService();
+      const percentageFunding = await listingService.getAssetPercentageFunded(req);
+      res.status(200).json(percentageFunding);
+    } catch (error) {
+      logger.error("getPercentageFunding: " + error);
       res.status(400).json({ error: "Internal Server Error" });
     }
   },

@@ -27,10 +27,23 @@ const utils = {
       return `${year}-${month}-${day} ${hours}:${minutes}${period}`;
     },
 
+    addDaysToCurrentDate: (n:number)=> {
+      const currentDate = new Date();
+      const newDate = new Date(currentDate);
+      newDate.setDate(currentDate.getDate() + n);
+      return newDate;
+    },
+
     wss: null,
 
     delay(ms:number){
       return new Promise(resolve=> setTimeout(resolve,ms))
+    },
+
+    flattenArray:(arr:any) => {
+      return arr.reduce((acc:any, curr: any) => {
+        return acc.concat(Array.isArray(curr) ? utils.flattenArray(curr) : curr);
+      }, []);
     },
 
     userConnections: new Map()

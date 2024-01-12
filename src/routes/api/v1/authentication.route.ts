@@ -17,7 +17,7 @@ router.get('/send-phone-otp', authController.sendPhoneOtp)
 // router.post('/reset-password', authController.resetPassword)
 router.post('/refresh-token', authController.getRefreshToken)
 // router.get('/user-profile', decode, authController.getUserProfile)
-// router.put('/user-profile', decode, authController.saveUserProfile)
+router.put('/user-profile', decode, authController.saveUserProfile)
 // router.get('/authorize', passport.authenticate("facebook"))
 
 
@@ -35,7 +35,7 @@ router.all('/send-phone-otp', handleInvalidMethod)
 // router.all('/reset-password', handleInvalidMethod);
 router.all('/login', handleInvalidMethod);
 router.all('/refresh-token', handleInvalidMethod);
-// router.all('/user-profile', handleInvalidMethod);
+router.all('/user-profile', handleInvalidMethod);
 // router.all('/user-profile', handleInvalidMethod);
 export default router
 

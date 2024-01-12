@@ -14,9 +14,7 @@ const client = twilio(accountSid, authToken);
       from: twilioPhoneNumber,
       to: to,
     });
-
     console.log('SMS sent:', smsResponse.sid);
-
     return { success: true, message: 'SMS sent successfully' };
   } catch (error:any) {
     console.error('Error sending SMS:', error.message);

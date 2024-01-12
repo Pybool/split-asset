@@ -1,7 +1,9 @@
 import { RequestHandler } from "express";
 
 export interface IListing{
+  searchByText:RequestHandler;
   getListings:RequestHandler;
+  getListingById: RequestHandler;
   filterListings:RequestHandler;
   createListing:RequestHandler ;
   getListingSubscriptionsByAssetId: RequestHandler;
@@ -11,6 +13,9 @@ export interface IListing{
   bookMarkListing:RequestHandler;
   getListingSubscriptionsByUserId:RequestHandler;
   getBookMarksByUserId:RequestHandler;
+  getSubscriptionsLineItemsByListingId: RequestHandler;
+  uploadPaymentProof:RequestHandler;
+  getAssetPercentageFunded: RequestHandler;
   
 }
 export interface ICreateListing{
