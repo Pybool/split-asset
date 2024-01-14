@@ -29,13 +29,13 @@ const mailActions = {
           await sendMail(mailOptions);
           if (created) resolve({ status: true, accessToken, refreshToken });
           else resolve({ status: true, link: confirmationLink });
-        } catch(error){
-          console.log(error)
+        } catch (error) {
+          console.log(error);
           resolve({ status: false, link: "" });
         }
-      }).catch((error:any)=>{
-        console.log(error)
-        throw error
+      }).catch((error: any) => {
+        console.log(error);
+        throw error;
       });
     },
 
@@ -43,32 +43,33 @@ const mailActions = {
       return { status: true, message: "" };
     },
   },
-  uploadRequest: {
-    sendOneTimePasswordMail: async (payload: {
-      authorizationCode: string;
+
+  property: {
+    sendPropertyInvite: async (payload: {
+      fullname: string;
       email: string;
-      postRef: string;
+      propertyUrl:string;
     }) => {
-      let authorizationTemplate;
+      let invitationTemplate;
       let mailOptions: Options;
       try {
-        authorizationTemplate = await ejs.renderFile(
-          "src/templates/approvalOtpTemplate.ejs",
+        invitationTemplate = await ejs.renderFile(
+          "src/templates/invitation.ejs",
           {
-            authorizationCode: payload.authorizationCode,
-            recepient: payload.email,
-            postRef: payload.postRef,
+            propertyIssuer: payload.fullname,
+            email: payload.email,
+            propertyUrl: payload.propertyUrl,
           }
         );
         mailOptions = {
-          from: "info.feelnigeria@gmail.com",
+          from: "info.splitasset@co.ng",
           to: payload?.email,
-          subject: "Sms Confirmed",
-          text: `Your sms was confirmed`,
-          html: authorizationTemplate,
+          subject: "Property Invitation!",
+          text: `Property Invitation!`,
+          html: invitationTemplate,
         };
       } catch (error) {
-        console.log(error)
+        console.log(error);
         throw error;
       }
       try {

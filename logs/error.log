@@ -54,3 +54,5 @@ error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2
 error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.677+01:00"}
 error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.683+01:00"}
 error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-12T22:12:52.732+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-13T08:48:53.478+01:00"}
+error: createListing: SyntaxError: "undefined" is not valid JSON {"timestamp":"2024-01-13T08:48:53.536+01:00"}

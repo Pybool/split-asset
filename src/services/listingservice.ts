@@ -244,11 +244,11 @@ class ListingService {
         email = requestBodyData.email;
       }
       if (phone && email) {
-        let imageFile: any = req.file;
+        let imageFiles: any = req.files;
         let fileName: any;
         let filePath: any;
-        if (imageFile) {
-          const today = new Date();
+
+        const today = new Date();
           const dateFolder = `${today.getFullYear()}-${(today.getMonth() + 1)
             .toString()
             .padStart(2, "0")}-${today.getDate().toString().padStart(2, "0")}`;
@@ -264,20 +264,29 @@ class ListingService {
             fs.mkdirSync(uploadFolderPath);
           }
           // Create the daily folder if it doesn't exist
-          if (!fs.existsSync(dailyFolderPath)) {
-            fs.mkdirSync(dailyFolderPath);
-          }
-          fileName = `image_${Date.now()}.png`;
-          filePath = path.resolve(dailyFolderPath, fileName);
-
-          const filePathWithoutPublic = filePath.split(path.join("public"))[1];
-          const normalizedFilePath = filePathWithoutPublic.replace(
-            new RegExp(path.sep.replace("\\", "\\\\"), "g"),
-            "/"
-          );
-
-          requestBodyData.assetImages = [normalizedFilePath];
+        if (!fs.existsSync(dailyFolderPath)) {
+          fs.mkdirSync(dailyFolderPath);
         }
+
+        const assetImages = [];
+        console.log("Images files ", imageFiles)
+
+        if(imageFiles?.length > 0){
+          for (const imageFile of imageFiles) {
+            const fileName = `image_${Date.now()}.png`;
+            const filePath = path.resolve(dailyFolderPath, fileName);
+            const filePathWithoutPublic = filePath.split(path.join("public"))[1];
+            const normalizedFilePath = filePathWithoutPublic.replace(
+              new RegExp(path.sep.replace("\\", "\\\\"), "g"),
+              "/"
+            );
+            assetImages.push(normalizedFilePath);
+  
+            fs.writeFileSync(filePath, imageFile.buffer);
+          }
+          requestBodyData.assetImages = assetImages;
+        }
+
         const user = await User.findOne({ email: requestBodyData.email });
         if (user) {
           requestBodyData.listedBy = user._id;
@@ -303,11 +312,6 @@ class ListingService {
         const savedStatus = await existingListing.save();
         const checkSave = savedStatus._id.toString().length > 0;
         if (checkSave) {
-          // Use file.buffer instead of converting base64
-          if (imageFile) {
-            console.log(filePath, imageFile);
-            fs.writeFileSync(filePath, imageFile?.buffer);
-          }
           return {
             status: checkSave,
             id: savedStatus._id.toString(),
@@ -767,7 +771,6 @@ class ListingService {
       // Populate listing information for each subscription
       const fullSubscriptions = [];
       for (const subscriptionLineItem of subscriptionsLineItems) {
-        console.log("BSON ", subscriptionLineItem.subscription.toString());
         try {
           const subscriptionObj = await SubscriptionsModel.findOne({
             _id: subscriptionLineItem.subscription.toString(),

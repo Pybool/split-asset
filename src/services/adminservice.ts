@@ -27,7 +27,6 @@ export class AdminService {
         }
       }
       const percentageFundedArr = utils.flattenArray(lineItemsOfInterest);
-      console.log(percentageFundedArr);
       const totalFundReceived = percentageFundedArr.reduce(
         (accumulator: any, currentValue: any) => {
           return accumulator + (currentValue.fundReceived || 0);

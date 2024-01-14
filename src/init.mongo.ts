@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 import { config as dotenvConfig } from 'dotenv';
 import logger from './logger';
 dotenvConfig()
-// const uri = `mongodb+srv://ekoemmanueljavl:${process.env.MONGODB_PASSWORD}@cluster0.n8o8vva.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://ekoemmanueljavl:${process.env.MONGODB_PASSWORD}@splitassetcluster.qfrvjdg.mongodb.net/?retryWrites=true&w=majority`;
 
-const mongouri:any = 'mongodb://127.0.0.1:27017'
+const mongouri:any = uri//'mongodb://127.0.0.1:27017'
 console.log("DATBASE NAME ",process.env.DB_NAME)
 mongoose 
   .connect(mongouri, {
